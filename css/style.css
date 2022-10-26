@@ -134,7 +134,7 @@ button:focus {
 .form-control:focus {
     outline: none;
     box-shadow: none;
-    border-bottom: 1px solid #f15b5b;
+    border-bottom: 1px solid #862024;
 }
 
 .impl_padderleft {
@@ -446,8 +446,8 @@ button:focus {
     left: 0;
     right: 0;
     z-index: -1;
-    background-color: #f15b5b;
-    border: 1px solid #f15b5b;
+    background-color: #862024;
+    border: 1px solid #862024;
     -webkit-transform: skewX(-26deg);
     -moz-transform: skewX(-26deg);
     -o-transform: skewX(-26deg);
@@ -533,7 +533,7 @@ ul.impl_header_social li a {
 }
 
 ul.impl_header_social li a:hover {
-    color: #f15b5b;
+    color: #862024;
 }
 
 .impl_header_time {
@@ -598,7 +598,7 @@ ul.impl_header_icons li span {
 }
 
 ul.impl_header_icons li span:hover {
-    color: #f15b5b;
+    color: #862024;
 }
 
 ul.impl_header_icons li a {
@@ -608,7 +608,7 @@ ul.impl_header_icons li a {
 }
 
 ul.impl_header_icons li>a:hover {
-    color: #f15b5b;
+    color: #862024;
 }
 
 .impl_menu_wrapper {
@@ -768,7 +768,7 @@ ul.impl_header_icons li>a:hover {
 }
 
 .cart-box .content .title:hover {
-    color: #f15b5b;
+    color: #862024;
 }
 
 .cart-box .content .quantity {
@@ -781,7 +781,7 @@ ul.impl_header_icons li>a:hover {
 .cart-box .content .price {
     font-size: 17px;
     line-height: 17px;
-    color: #f15b5b;
+    color: #862024;
     font-weight: 700;
 }
 
@@ -790,7 +790,7 @@ ul.impl_header_icons li>a:hover {
     top: 15px;
     right: 0;
     cursor: pointer;
-    color: #f15b5b;
+    color: #862024;
 }
 
 .cart-box .summary {
@@ -927,7 +927,7 @@ ul.impl_header_icons li>a:hover {
 .bar3 {
     width: 30px;
     height: 2px;
-    background-color: #f15b5b;
+    background-color: #862024;
     margin: 5px 0;
     border-radius: 10px;
     -webkit-transition: all .5s;
@@ -963,7 +963,7 @@ ul.impl_header_icons li>a:hover {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #f15b5b;
+    background-color: #862024;
     width: 100%;
     text-align: center;
     padding: 42px 0px;
@@ -1218,7 +1218,7 @@ span.srch_close_btn_icon {
 }
 
 .impl_ex_btn a:hover {
-    color: #f15b5b;
+    color: #862024;
 }
 
 .mouse-wrap {
@@ -1356,7 +1356,8 @@ p.slogan strong {
 
 .impl_search_box {
     padding: 30px 41px 0px 30px;
-    background-color: #f15b5b;
+    background-color: #862024;
+    border-radius: 5px;
 }
 
 .impl_search_box .nice-select {
@@ -1648,7 +1649,7 @@ p.slogan strong {
     border-radius: 100%;
     position: absolute;
     top: 0;
-    background-color: #f15b5b;
+    background-color: #862024;
     z-index: 1;
     right: -18px;
 }
@@ -1810,7 +1811,7 @@ p.slogan strong {
     position: absolute;
     width: 35px;
     height: 35px;
-    background-color: #f15b5b;
+    background-color: #862024;
     text-align: center;
     line-height: 35px;
     top: 20px;
@@ -1850,7 +1851,7 @@ p.slogan strong {
 }
 
 .impl_fea_car_data h2 a:hover {
-    color: #f15b5b;
+    color: #862024;
 }
 
 .impl_fea_car_data ul {
@@ -2195,7 +2196,7 @@ p.slogan strong {
 .impl_post_data h2 a:hover,
 .impl_pst_admin span a:hover,
 ul.impl_pst_views li a:hover {
-    color: #f15b5b;
+    color: #862024;
 }
 
 .impl_post_data p {
@@ -2263,7 +2264,7 @@ ul.impl_pst_views li a i {
     width: 50px;
     height: 50px;
     text-align: center;
-    background-color: #f15b5b;
+    background-color: #862024;
     padding: 4px 12px;
     text-transform: capitalize;
     z-index: 10000;
@@ -2418,7 +2419,7 @@ h1.impl_foo_title {
 }
 
 .impl_foo_box ul li a:hover {
-    color: #f15b5b;
+    color: #862024;
 }
 
 .impl_foo_box ul li a:hover i {
@@ -2498,7 +2499,7 @@ h1.impl_foo_title {
     right: 0;
     width: 40px;
     height: 40px;
-    background-color: #f15b5b;
+    background-color: #862024;
     border: 1px solid transparent;
     color: #fff;
     font-size: 15px;
@@ -2622,7 +2623,7 @@ p.impl_copyright {
     float: none;
     width: 100%;
     padding: 37px 15px 40px;
-    background-color: #f15b5b;
+    background-color: #862024;
     display: inline-block;
 }
 
@@ -2795,7 +2796,7 @@ p.impl_ser_para {
 .impl_service_wrapper.impl_faq_wrapper .impl_welcome_text .panel-title a:after {
     font-family: FontAwesome;
     content: "\f068";
-    background-color: #f15b5b;
+    background-color: #862024;
     color: #ffffff;
     position: absolute;
     right: 30px;
@@ -2999,7 +3000,7 @@ p.impl_ser_para {
 
 .impl_bread_wrapper ol.breadcrumb li.breadcrumb-item a {
     font-size: 16px;
-    color: #f15b5b;
+    color: #862024;
 }
 
 .impl_bread_wrapper .breadcrumb-item+.breadcrumb-item::before {
@@ -3086,7 +3087,7 @@ p.impl_ser_para {
 }
 
 .impl_progress_wrapper .progress .progress-bar {
-    background: #f15b5b;
+    background: #862024;
 }
 
 @-webkit-keyframes animate-positive {
@@ -3118,7 +3119,7 @@ p.impl_ser_para {
 .impl_tl_dot {
     width: 19px;
     height: 19px;
-    background-color: #f15b5b;
+    background-color: #862024;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -3223,7 +3224,7 @@ p.impl_ser_para {
 
 .impl_test_data {
     width: 85%;
-    background-color: #f15b5b;
+    background-color: #862024;
     padding: 70px 30px 30px 170px;
     display: inline-block;
     margin-left: 10%;
@@ -3406,7 +3407,7 @@ p.impl_ser_para {
 
 .impl_category_type .impl_btn.active:after,
 .impl_category_type .impl_btn:hover:after {
-    background-color: #f15b5b;
+    background-color: #862024;
 }
 
 /*----Sidebar Css Start----*/
@@ -3453,11 +3454,11 @@ h2.widget-title {
 }
 
 .impl_product_search.widget.woocommerce .foo_subs_btn:hover {
-    background-color: #f15b5b;
+    background-color: #862024;
 }
 
 .impl_product_search.widget.woocommerce .foo_subs_btn:before {
-    border-bottom: 39px solid #f15b5b;
+    border-bottom: 39px solid #862024;
 }
 
 .impl_product_brand.widget.woocommerce ul li,
@@ -3486,7 +3487,7 @@ h2.widget-title {
 
 .impl_product_brand ul li label:hover,
 .impl_product_color ul li label:hover {
-    color: #f15b5b;
+    color: #862024;
 }
 
 .impl_product_brand ul li label input[type="checkbox"],
@@ -3533,7 +3534,7 @@ h2.widget-title {
     font-size: 10px;
     left: 0;
     top: 0px;
-    background-color: #f15b5b;
+    background-color: #862024;
 }
 
 @-webkit-keyframes tick {
@@ -3709,12 +3710,12 @@ h2.widget-title {
 
 .impl_product_type.widget.woocommerce li a:hover,
 .widget.widget_categories li a:hover {
-    color: #f15b5b;
+    color: #862024;
 }
 
 .impl_product_type.widget.woocommerce li a:hover:before,
 .widget.widget_categories li a:hover:before {
-    background-color: #f15b5b;
+    background-color: #862024;
 }
 
 /*--Recent Post Css--*/
@@ -3758,7 +3759,7 @@ h2.widget-title {
 }
 
 .widget.widget_recent_entries ul li .recent_cmnt_data h4 a:hover {
-    color: #f15b5b;
+    color: #862024;
 }
 
 .widget.widget_recent_entries ul li:last-child {
@@ -3806,7 +3807,7 @@ h2.widget-title {
 }
 
 .widget.widget_tag_cloud ul li a:hover {
-    background-color: #f15b5b;
+    background-color: #862024;
     color: #ffffff;
 }
 
@@ -4057,7 +4058,7 @@ h2.widget-title {
 }
 
 .impl_query_form .form-control:focus {
-    border-color: #f15b5b;
+    border-color: #862024;
 }
 
 /*----Blog Page Css Start----*/
@@ -4178,7 +4179,7 @@ h3.comments-title {
 }
 
 .comment_data_info h3 a:hover {
-    color: #f15b5b;
+    color: #862024;
 }
 
 .comment-reply {
@@ -4188,7 +4189,7 @@ h3.comments-title {
     line-height: 30px;
     text-align: center;
     display: inline-block;
-    background-color: #f15b5b;
+    background-color: #862024;
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -4368,7 +4369,7 @@ h3.comment-reply-title {
 
 .impl_con_form .form-control:focus,
 .impl_con_form textarea.form-control:focus {
-    border-bottom: 1px solid #f15b5b;
+    border-bottom: 1px solid #862024;
 }
 
 .impl_con_form .impl_btn {
@@ -4377,13 +4378,13 @@ h3.comment-reply-title {
 }
 
 .impl_con_form .impl_btn:hover {
-    color: #f15b5b;
+    color: #862024;
     background-color: transparent;
     border: none;
 }
 
 .impl_con_form .impl_btn:after {
-    border: 1px solid #f15b5b;
+    border: 1px solid #862024;
 }
 
 .contact_map {
@@ -4413,8 +4414,8 @@ h3.comment-reply-title {
     position: relative;
     z-index: 1;
     width: 295px;
-    background-color: #f15b5b;
-    border: 2px solid #f15b5b;
+    background-color: #862024;
+    border: 2px solid #862024;
     -webkit-transform: skewX(-15deg);
     -moz-transform: skewX(-15deg);
     -o-transform: skewX(-15deg);
@@ -4464,7 +4465,7 @@ h3.comment-reply-title {
 }
 
 .impl_con_data p a:hover {
-    color: #f15b5b;
+    color: #862024;
 }
 
 .response {
@@ -4534,7 +4535,7 @@ h3.comment-reply-title {
     font-weight: 700;
     width: 100px;
     height: 80px;
-    background-color: #f15b5b;
+    background-color: #862024;
     line-height: 80px;
     float: left;
     opacity: 0.4;
@@ -4576,7 +4577,7 @@ h3.comment-reply-title {
     left: -180px;
     top: 50%;
     z-index: -1;
-    border: dashed 1px #f15b5b;
+    border: dashed 1px #862024;
 }
 
 #step_progressbar li:first-child:after,
@@ -4789,7 +4790,7 @@ ul.step_car_img li.step_imgs:hover .step_car_select {
     width: 25px;
     height: 25px;
     cursor: pointer;
-    background-color: #f15b5b;
+    background-color: #862024;
     line-height: 22px;
     border-radius: 100%;
     transform: translate(-50%, -50%);
@@ -4958,7 +4959,7 @@ ul.step_car_img li:hover .step_view_img_over {
 }
 
 .car_emi_wrapper>a:hover {
-    color: #f15b5b;
+    color: #862024;
 }
 
 .car_emi_wrapper>a i.fa {
@@ -5232,7 +5233,7 @@ ul.impl_car_prts li .impl_cr_no {
     background-color: #ffffff;
     color: #000;
     border-radius: 100%;
-    border: 3px solid #f15b5b;
+    border: 3px solid #862024;
     cursor: pointer;
 }
 
@@ -5377,7 +5378,7 @@ h2.impl_cmpr_title {
     height: 20px;
     display: inline-block;
     line-height: 19px;
-    background-color: #f15b5b;
+    background-color: #862024;
     border-radius: 100%;
     cursor: pointer;
 }
@@ -5453,7 +5454,7 @@ label.compare_check_label {
 }
 
 .compare_list_option label:hover {
-    color: #f15b5b;
+    color: #862024;
 }
 
 .compare_list_option label input[type="checkbox"] {
@@ -5515,7 +5516,7 @@ label.compare_check_label {
 }
 
 .compare_table table thead {
-    background-color: #f15b5b;
+    background-color: #862024;
 }
 
 .compare_table table.table-bordered thead th,
@@ -5566,7 +5567,7 @@ label.compare_check_label {
 
 .impl_checkout_wrapper #step_progressbar li.active {
     opacity: 1;
-    background-color: #f15b5b;
+    background-color: #862024;
 }
 
 .impl_checkout_wrapper #step_progressbar li span {
@@ -5874,7 +5875,7 @@ label.compare_check_label {
 
 .impl_signin .close:focus,
 .impl_signin .close:hover {
-    color: #f15b5b;
+    color: #862024;
     opacity: 1;
 }
 
@@ -5974,7 +5975,7 @@ label.compare_check_label {
 }
 
 .impl_sign_form .form-control:focus {
-    border-bottom: 1px solid #f15b5b;
+    border-bottom: 1px solid #862024;
 }
 
 .impl_sign_form .cy_button {
@@ -6016,7 +6017,7 @@ label.compare_check_label {
 
 .impl_sign_form .forget_password a:hover,
 .impl_sign_form p a:hover {
-    color: #f15b5b;
+    color: #862024;
 }
 
 .impl_sign_form p a {
@@ -6134,7 +6135,7 @@ label.compare_check_label {
     height: 165px;
     display: inline-block;
     line-height: 132px;
-    color: #f15b5b;
+    color: #862024;
     vertical-align: middle;
 }
 
@@ -6149,7 +6150,7 @@ label.compare_check_label {
     height: 170px;
     left: 0;
     top: 0;
-    background-color: #f15b5b;
+    background-color: #862024;
     transform: skew(12deg);
     -webkit-transform: skew(12deg);
     -moz-transform: skew(12deg);
@@ -6163,7 +6164,7 @@ label.compare_check_label {
     height: 170px;
     right: 0;
     top: 0;
-    background-color: #f15b5b;
+    background-color: #862024;
     transform: skew(12deg);
     -webkit-transform: skew(12deg);
     -moz-transform: skew(12deg);
@@ -6187,7 +6188,7 @@ label.compare_check_label {
 }
 
 .error_text .impl_btn {
-    color: #f15b5b;
+    color: #862024;
 }
 
 /*----Go to top css----*/
@@ -6539,7 +6540,7 @@ label.compare_check_label {
     }
 
     .impl_menu ul>li ul.sub-menu li a:hover {
-        color: #f15b5b;
+        color: #862024;
     }
 
     .impl_menu_wrapper ul li:last-child {
@@ -6592,7 +6593,7 @@ label.compare_check_label {
         background-color: #fff;
         top: 100%;
         left: 0;
-        border-bottom: 3px solid #f15b5b;
+        border-bottom: 3px solid #862024;
         opacity: 0;
         visibility: hidden;
         transform: translateY(2em);
@@ -6637,7 +6638,7 @@ label.compare_check_label {
     }
 
     .impl_menu_wrapper ul li ul.sub-menu li a:hover {
-        color: #f15b5b;
+        color: #862024;
     }
 
     .impl_menu_wrapper ul li ul.sub-menu li ul.sub-menu {
@@ -7143,7 +7144,7 @@ label.compare_check_label {
         left: -100%;
         background-image: url(../images/main/optima.jpeg);
         backdrop-filter: 8px;
-        background-color: #f15b5b;
+        background-color: #862024;
         background-size: cover;
         z-index: 1000;
         overflow-y: scroll;
