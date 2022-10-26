@@ -446,7 +446,7 @@ button:focus {
     left: 0;
     right: 0;
     z-index: -1;
-    background-color: #862024;
+    background: linear-gradient(rgb(134, 32, 36), rgb(0, 0, 0));
     border: 1px solid #862024;
     -webkit-transform: skewX(-26deg);
     -moz-transform: skewX(-26deg);
@@ -1585,7 +1585,7 @@ p.slogan strong {
 
 .impl_welcome_text .panel-default>.panel-heading+.panel-collapse>.panel-body {
     border-top-color: transparent;
-    background-color: #862024;
+    background: linear-gradient(#862024, #000000);
     color: #ffffff;
     padding: 20px;
     backface-visibility: hidden;
@@ -1595,7 +1595,7 @@ p.slogan strong {
 /*----Service Css Start----*/
 
 .impl_service_wrapper {
-    background-color: #862024;
+    background: linear-gradient(#862024, #000000);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2094,7 +2094,6 @@ p.slogan strong {
 
 .impl_post_img:after {
     position: absolute;
-    background: #862024;
     height: 100%;
     left: 0;
     top: 0;
