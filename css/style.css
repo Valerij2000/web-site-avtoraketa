@@ -691,7 +691,7 @@ ul.impl_header_icons li>a:hover {
 }
 
 .impl_menu_wrapper ul li a:hover {
-    color: #f15b5b;
+    color: #862024;
 }
 
 .cart-popup {
@@ -1547,13 +1547,13 @@ p.slogan strong {
 
 .impl_welcome_text .panel-title a:hover,
 .impl_welcome_text .panel-title a:focus {
-    color: #f15b5b;
+    color: #862024;
 }
 
 .impl_welcome_text .panel-heading .accordion-toggle:after {
     font-family: FontAwesome;
     content: "\f107";
-    background-color: #f15b5b;
+    background-color: #862024;
     color: #ffffff;
     position: absolute;
     left: 0;
@@ -1578,13 +1578,13 @@ p.slogan strong {
     bottom: 0;
     width: 0;
     height: 0;
-    border-top: 50px solid #f15b5a;
+    border-top: 50px solid #862024;
     border-right: 16px solid transparent;
 }
 
 .impl_welcome_text .panel-default>.panel-heading+.panel-collapse>.panel-body {
     border-top-color: transparent;
-    background-color: #f15b5a;
+    background-color: #862024;
     color: #ffffff;
     padding: 20px;
     backface-visibility: hidden;
@@ -1594,7 +1594,7 @@ p.slogan strong {
 /*----Service Css Start----*/
 
 .impl_service_wrapper {
-    background-color: #f15b5a;
+    background-color: #862024;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1764,14 +1764,14 @@ p.slogan strong {
 }
 
 .impl_play_icon:hover {
-    border-color: #f15b5a;
+    border-color: #862024;
     -moz-box-shadow: 0 0 5px 5px rgba(241, 91, 90, 0.4);
     -webkit-box-shadow: 0 0 5px 5px rgba(241, 91, 90, 0.4);
     box-shadow: 0 0 5px 5px rgba(241, 91, 90, 0.4);
 }
 
 .impl_play_icon:hover a {
-    color: #f15b5a;
+    color: #862024;
 }
 
 /*----Featured Car Css Start----*/
@@ -2093,7 +2093,7 @@ p.slogan strong {
 
 .impl_post_img:after {
     position: absolute;
-    background: rgba(241, 91, 91, 0.8);
+    background: #862024;
     height: 100%;
     left: 0;
     top: 0;
@@ -2514,7 +2514,7 @@ h1.impl_foo_title {
     bottom: 0;
     width: 0;
     height: 0;
-    border-bottom: 39px solid #f15b5a;
+    border-bottom: 39px solid #862024;
     border-left: 13px solid transparent;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -2834,7 +2834,7 @@ p.impl_ser_para {
     padding: 15px 30px;
     font-weight: 500;
     line-height: 30px;
-    border-top: 10px solid #f15b5a;
+    border-top: 10px solid #862024;
     backface-visibility: hidden;
 }
 
@@ -4274,8 +4274,8 @@ h3.comment-reply-title {
 }
 
 .comment-respond input#comment-submit {
-    border: 1px solid #f15b5a;
-    background-color: #f15b5a;
+    border: 1px solid #862024;
+    background-color: #862024;
 }
 
 .comment-respond input#comment-submit:hover {
@@ -6494,7 +6494,7 @@ label.compare_check_label {
     }
 
     .impl_welcome_text .panel-heading .accordion-toggle:before {
-        border-top: 65px solid #f15b5a;
+        border-top: 65px solid #862024;
         border-right: 16px solid transparent;
     }
 
@@ -7822,12 +7822,12 @@ label.compare_check_label {
     }
 
     .impl_signin::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 6px #f15b5a;
+        -webkit-box-shadow: inset 0 0 6px #862024;
     }
 
     .impl_signin::-webkit-scrollbar-thumb {
-        background-color: #f15b5a;
-        outline: 2px solid #f15b5a;
+        background-color: #862024;
+        outline: 2px solid #862024;
     }
 
 }
