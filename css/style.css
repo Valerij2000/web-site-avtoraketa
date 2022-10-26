@@ -1356,7 +1356,7 @@ p.slogan strong {
 
 .impl_search_box {
     padding: 30px 41px 0px 30px;
-    background-color: #862024;
+    background: linear-gradient(#862024, #000000);
     border-radius: 5px;
 }
 
