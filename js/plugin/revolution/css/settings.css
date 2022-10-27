@@ -1333,9 +1333,9 @@ img.tp-slider-alternative-image {
 .tp-bannertimer {
   visibility: hidden;
   width: 100%;
-  height: 5px;
-  background: #000;
-  background: rgba(0, 0, 0, .15);
+  height: 4px;
+  background: rgb(187, 183, 183);
+  /* background: rgba(0, 0, 0, .15); */
   position: absolute;
   z-index: 200;
   top: 0

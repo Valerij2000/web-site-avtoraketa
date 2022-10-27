@@ -412,7 +412,9 @@ button:focus {
 /*----Button Css Start----*/
 
 .impl_btn {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     height: 40px;
     line-height: 40px;
     color: #ffffff;
@@ -645,14 +647,24 @@ ul.impl_header_icons li>a:hover {
 }
 
 .impl_menu_wrapper ul li a {
+    color: #000;
     float: left;
     width: auto;
     text-transform: uppercase;
     position: relative;
-    color: #000;
     font-weight: 600;
     padding: 25px 10px 24px;
     line-height: 11px;
+}
+
+.impl_menu_wrapper ul li a:hover {
+    color: grey;
+}
+
+@media (max-width: 768.98px) {
+    .impl_menu_wrapper ul li a {
+        color: #fff;
+    }
 }
 
 .impl_menu_wrapper ul li a:after,
@@ -691,7 +703,7 @@ ul.impl_header_icons li>a:hover {
 }
 
 .impl_menu_wrapper ul li a:hover {
-    color: #862024;
+    opacity: 0.8;
 }
 
 .cart-popup {
@@ -1348,6 +1360,14 @@ p.slogan strong {
     display: none;
 }
 
+.menu_cross i {
+    transition: all 0.4s ease 0s;
+}
+
+.menu_cross i:hover {
+    transform: rotate(180deg);
+}
+
 .impl_select_boxes {
     width: 83%;
     display: inline-block;
@@ -1657,7 +1677,7 @@ p.slogan strong {
 .impl_timeline_wrapper ul li .impl_tl_item h2 {
     font-size: 20px;
     font-weight: 400;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     padding-bottom: 15px;
 }
 
@@ -1780,6 +1800,12 @@ p.slogan strong {
 .impl_featured_wrappar {
     padding: 100px 0px 50px;
     background-color: #0a0a0a;
+}
+
+@media (max-width: 768.98px) {
+    .impl_featured_wrappar {
+        padding: 20px 0px 30px;
+    }
 }
 
 .impl_fea_car_box {
@@ -6190,29 +6216,81 @@ label.compare_check_label {
     color: #862024;
 }
 
-/*----Go to top css----*/
-.gotop {
+.btn-whatsapp-pulse {
     position: fixed;
-    right: 50px;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    bottom: 20px;
     z-index: 10;
     cursor: pointer;
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -ms-transition: all 0.25s ease;
+    background: #25d366;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    text-decoration: none;
+    border-radius: 50%;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
 }
 
-.gotop.goto {
-    bottom: 20px;
-    transform: translateY(-20px);
-    -webkit-transform: translateY(-20px);
-    -moz-transform: translateY(-20px);
-    -ms-transform: translateY(-20px);
-    -transform: translateY(-20px);
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+    }
+
+    80% {
+        box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+    }
+}
+
+.btn-whatsapp-pulse-border {
+    animation-play-state: paused;
+}
+
+.btn-whatsapp-pulse-border::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    padding: 25px;
+    border: 5px solid #25d366;
+    opacity: 0.75;
+    animation-name: pulse-border;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse-border {
+    0% {
+        padding: 25px;
+        opacity: 0.75;
+    }
+
+    75% {
+        padding: 50px;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@media (max-width: 768.98px) {
+    .btn-whatsapp-pulse {
+        width: 30px;
+        height: 30px;
+        right: 10px;
+        bottom: 10px;
+        padding: 10px;
+    }
 }
 
 /*---------- Responsive css Start -------*/
@@ -7141,10 +7219,9 @@ label.compare_check_label {
         top: 0;
         height: 100%;
         left: -100%;
-        background-image: url(../images/main/optima.jpeg);
         backdrop-filter: 8px;
-        background-color: #862024;
         background-size: cover;
+        background: linear-gradient(#1D1D1D, #5252508a);
         z-index: 1000;
         overflow-y: scroll;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.44);
@@ -7882,10 +7959,6 @@ label.compare_check_label {
 }
 
 @media (max-width: 479px) {
-    .gotop {
-        right: 10px;
-    }
-
     .impl_search_box select {
         width: 100%;
         margin: 15px 0px;
