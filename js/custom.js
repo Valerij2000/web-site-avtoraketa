@@ -28,7 +28,6 @@ Assigned to: ThemeForest
             this.Home_Slider();
             this.Bottom_Scroll();
             this.RangeSlider();
-            this.Video_popup();
             this.Counter();
             this.Testimonial();
             this.Color_slider();
@@ -235,21 +234,6 @@ Assigned to: ThemeForest
                     grid: false
                 });
             }
-        },
-
-        // Video Popup
-        Video_popup: function() {
-            if ($('.impl-popup-youtube').length > 0) {
-                $('.impl-popup-youtube').magnificPopup({
-                    // disableOn: 700,
-                    type: 'iframe',
-                    mainClass: 'mfp-fade',
-                    removalDelay: 160,
-                    preloader: false,
-                    fixedContentPos: false
-                });
-            }
-
         },
 
         // Counter
