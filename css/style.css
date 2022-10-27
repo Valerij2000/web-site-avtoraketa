@@ -533,7 +533,7 @@ ul.impl_header_social li a {
 }
 
 ul.impl_header_social li a:hover {
-    color: #862024;
+    opacity: 0.8;
 }
 
 .impl_header_time {
@@ -2418,7 +2418,7 @@ h1.impl_foo_title {
 }
 
 .impl_foo_box ul li a:hover {
-    color: #862024;
+    opacity: 0.8;
 }
 
 .impl_foo_box ul li a:hover i {
