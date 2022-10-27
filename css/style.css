@@ -6285,11 +6285,13 @@ label.compare_check_label {
 
 @media (max-width: 768.98px) {
     .btn-whatsapp-pulse {
-        width: 30px;
-        height: 30px;
         right: 10px;
         bottom: 10px;
-        padding: 10px;
+        padding: 18px;
+    }
+
+    .btn-whatsapp-pulse {
+        font-size: 30px;
     }
 }
 
