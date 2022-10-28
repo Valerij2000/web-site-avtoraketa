@@ -1,1 +1,1 @@
-// var $ = require("./jquery.js");
+import bootstrap from 'bootstrap';

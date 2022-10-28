@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const ImageminWebpWebpackPlugin= require("imagemin-webp-webpack-plugin");
+const ImageminWebpWebpackPlugin = require("imagemin-webp-webpack-plugin");
 const hbsPages = fs.readdirSync('src').filter(fileName => fileName.endsWith('.hbs')).map(el => el.slice(0, -4));
 
 let mode = 'development';
@@ -50,7 +50,7 @@ module.exports = {
           options: {
             inlineRequires: '\/img\/'
           },
-        } ],
+        }],
       },
       {
         test: /\.html$/i,

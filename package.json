@@ -28,6 +28,7 @@
     "@babel/core": "^7.19.6",
     "@babel/preset-env": "^7.19.4",
     "babel-loader": "^9.0.0",
+    "bootstrap": "^4.0.0",
     "css-loader": "^6.7.1",
     "group-css-media-queries-loader": "^4.3.0",
     "handlebars-loader": "^1.7.2",
