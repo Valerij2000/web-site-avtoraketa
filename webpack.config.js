@@ -3,6 +3,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ImageminWebpWebpackPlugin = require("imagemin-webp-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 const hbsPages = fs.readdirSync('src').filter(fileName => fileName.endsWith('.hbs')).map(el => el.slice(0, -4));
 
 let mode = 'development';
@@ -41,6 +42,13 @@ module.exports = {
       filename: 'css/[name].[contenthash].css',
     }),
     new ImageminWebpWebpackPlugin(),
+    new CopyPlugin({
+      patterns: [{
+          from: path.resolve(__dirname, 'src', 'js'),
+          to: path.resolve(__dirname, 'dist', 'js'),
+        },
+      ],
+    }),
   ],
   module: {
     rules: [{
