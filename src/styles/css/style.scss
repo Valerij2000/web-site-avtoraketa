@@ -2342,7 +2342,9 @@ ul.impl_pst_views li a i {
 /*----Footer Css Start----*/
 
 .impl_footer_wrapper {
-    background-image: url('../img/bg/footer_wrapper.jpeg');
+    background-image: url('../img/bg/bg-footer.png');
+    background-position: center;
+    min-height: 573px;
     background-size: cover;
     position: relative;
     z-index: 1;
@@ -2358,7 +2360,7 @@ ul.impl_pst_views li a i {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 60%);
     content: "";
 }
 
@@ -2423,7 +2425,7 @@ ul.impl_pst_views li a i {
 }
 
 .impl_foo_box.footer_abt_text p {
-    padding-top: 25px;
+    padding-top: 48px;
     line-height: 30px;
     margin: 0px;
 }
@@ -5898,7 +5900,7 @@ label.compare_check_label {
     width: 61%;
     text-align: center;
     position: relative;
-    padding: 65px 40px 103px;
+    padding: 65px 40px 155px;
     z-index: 1;
 }
 

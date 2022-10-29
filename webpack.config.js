@@ -25,7 +25,7 @@ module.exports = {
   },
   devServer: {
     port: 5555,
-    open: false,
+    open: true,
     hot: true,
     watchFiles: [
       `src/**/*.hbs`,
