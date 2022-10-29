@@ -17,7 +17,7 @@ $(document).ready(function(){
 				if($(this).val().trim() == ''){
 					check = 1;
 					$(this).focus();
-					targetResp.html('You missed out some fields.');
+					targetResp.html('Заполните все поля');
 					$(this).addClass('error');
 					return false;
 				}else{

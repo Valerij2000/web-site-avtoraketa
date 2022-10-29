@@ -969,13 +969,17 @@ ul.impl_header_icons li>a:hover {
     transform: rotate(45deg) translate(-5px, -5px);
 }
 
+.callback {
+    color: #000;
+}
+
 /*----Search css Start-----*/
 
 .impl_search_area {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #862024;
+    background: linear-gradient(#862024, #000000);
     width: 100%;
     text-align: center;
     padding: 42px 0px;
@@ -1006,7 +1010,7 @@ ul.impl_header_icons li>a:hover {
     position: relative;
 }
 
-.srch_inner input[type="text"] {
+.search-field {
     width: 100%;
     height: 55px;
     padding: 0px 20px;
@@ -2984,10 +2988,11 @@ p.impl_ser_para {
 /*----About Page Css start-----*/
 
 .impl_bread_wrapper {
-    background-image: url(http://via.placeholder.com/1920x360);
+    background-image: url('../img/contact/main.jpeg');
+    background-position: 100% 50%;
     background-size: cover;
     position: relative;
-    padding: 136px 0px;
+    padding: 256px 0px;
     text-align: center;
     backface-visibility: hidden;
 }
@@ -3025,7 +3030,7 @@ p.impl_ser_para {
 
 .impl_bread_wrapper ol.breadcrumb li.breadcrumb-item a {
     font-size: 16px;
-    color: #862024;
+    color: grey;
 }
 
 .impl_bread_wrapper .breadcrumb-item+.breadcrumb-item::before {
@@ -4082,6 +4087,11 @@ h2.widget-title {
     margin-left: 10px;
 }
 
+.impl_btn:hover {
+    opacity: 0.8;
+    color: white;
+}
+
 .impl_query_form .form-control:focus {
     border-color: #862024;
 }
@@ -4343,10 +4353,16 @@ h3.comment-reply-title {
 /*----Contact Page Css Start----*/
 
 .impl_contact_wrapper {
-    padding: 80px 0px;
+    background: linear-gradient(rgb(0, 0, 0), rgb(134, 32, 36));
+    padding: 0 0 80px 0;
+}
+
+.contact-link {
+    font-size: 1rem;
 }
 
 .impl_con_form {
+    border-radius: 5px;
     background-color: #ffffff;
     padding: 45px 40px 50px 220px;
     width: 750px;
@@ -4403,7 +4419,7 @@ h3.comment-reply-title {
 }
 
 .impl_con_form .impl_btn:hover {
-    color: #862024;
+    opacity: 0.8;
     background-color: transparent;
     border: none;
 }
@@ -4439,8 +4455,7 @@ h3.comment-reply-title {
     position: relative;
     z-index: 1;
     width: 295px;
-    background-color: #862024;
-    border: 2px solid #862024;
+    border: 2px solid #fff;
     -webkit-transform: skewX(-15deg);
     -moz-transform: skewX(-15deg);
     -o-transform: skewX(-15deg);
@@ -4486,11 +4501,11 @@ h3.comment-reply-title {
 }
 
 .impl_contact_box:hover {
-    background-color: #0a0a0a;
+    background: linear-gradient(rgb(173, 168, 168), rgb(134, 32, 36));
 }
 
 .impl_con_data p a:hover {
-    color: #862024;
+    opacity: 0.8;
 }
 
 .response {
@@ -5862,6 +5877,7 @@ label.compare_check_label {
 }
 
 .impl_signin {
+    border-radius: 5px;
     width: 970px;
     position: absolute;
     top: 50%;
@@ -5876,7 +5892,7 @@ label.compare_check_label {
 }
 
 .impl_sign_img {
-    background-image: url(http://via.placeholder.com/600x510/666);
+    background-image: url('../img/contact/popup-car.jpeg');
     background-size: cover;
     float: right;
     width: 61%;
@@ -5981,8 +5997,9 @@ label.compare_check_label {
 }
 
 .impl_sign_form .form-control {
+    resize: none;
     width: 100%;
-    height: 45px;
+    height: 42px;
     padding: 6px 0;
     padding-right: 15px;
     font-size: 15px;
@@ -6111,7 +6128,7 @@ label.compare_check_label {
 
 .impl_signin .impl_btn:hover,
 .impl_signin .impl_btn:focus {
-    color: #151515;
+    opacity: 0.8;
 }
 
 .impl_signin .impl_btn:hover:after {
@@ -6903,7 +6920,7 @@ label.compare_check_label {
 
     .impl_sign_form {
         padding: 27px 0px 35px 31px;
-        width: 50%;
+        width: 100%;
     }
 
     #signup .impl_sign_bottom {
@@ -8477,6 +8494,18 @@ label.compare_check_label {
 
     .impl_play_icon {
         left: 46%;
+    }
+}
+
+.map-info {
+    color: #000;
+}
+
+.map {
+    width: 130%;
+
+    @media (max-width: 1200px) {
+        width: 100%;
     }
 }
 
