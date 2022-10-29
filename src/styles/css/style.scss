@@ -8501,6 +8501,12 @@ label.compare_check_label {
     transform: scale(0);
 }
 
+@media (max-width: 768.98px) {
+    .impl_menu_wrapper .impl_btn {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     .impl_timeline {
         display: grid !important;

@@ -409,14 +409,6 @@ website:   	http://www.themepunch.com
   position: relative
 }
 
-/* .tp-carousel-wrapper {
-  cursor: url(openhand.cur), move
-} */
-
-/* .tp-carousel-wrapper.dragged {
-  cursor: url(closedhand.cur), move
-} */
-
 .tp_inner_padding {
   box-sizing: border-box;
   max-height: none !important
