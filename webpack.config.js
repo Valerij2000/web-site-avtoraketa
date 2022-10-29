@@ -44,21 +44,29 @@ module.exports = {
     new ImageminWebpWebpackPlugin(),
     new CopyPlugin({
       patterns: [{
-          from: path.resolve(__dirname, 'src', 'vendor'),
-          to: path.resolve(__dirname, 'dist', 'vendor'),
-        },
-      ],
+        from: path.resolve(__dirname, 'src', 'vendor'),
+        to: path.resolve(__dirname, 'dist', 'vendor'),
+      }, ],
     }),
   ],
   module: {
     rules: [{
         test: /\.hbs$/i,
         use: [{
-          loader: 'handlebars-loader',
-          options: {
-            inlineRequires: '\/img\/'
+            loader: 'handlebars-loader',
+            options: {
+              inlineRequires: '\/img\/'
+            },
           },
-        }],
+          {
+            loader: 'string-replace-loader',
+            options: {
+              search: '@img',
+              replace: path.resolve(__dirname, 'src', `img`),
+              flags: 'g'
+            }
+          },
+        ],
       },
       {
         test: /\.html$/i,
@@ -120,6 +128,7 @@ module.exports = {
   },
   resolve: {
     alias: {
+      '@img': path.join(__dirname, 'src', 'img'),
       '@src': path.join(__dirname, 'src')
     },
   },
