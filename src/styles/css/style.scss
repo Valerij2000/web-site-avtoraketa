@@ -8521,6 +8521,11 @@ label.compare_check_label {
     padding: 10px;
 }
 
+.tooltip-inner {
+    background-color: #fff;
+    color: #000;
+}
+
 @media (max-width: 600px) {
     .img-logo {
         max-width: 200px;
