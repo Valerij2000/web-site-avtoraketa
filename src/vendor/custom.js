@@ -1,10 +1,3 @@
-/*--------------------- Copyright (c) 2017 -----------------------
-[Master Javascript]
-
-Project: Impel Car Dealer Responsive HTML Template
-Version: 1.0.0
-Assigned to: ThemeForest
--------------------------------------------------------------------*/
 (function($) {
     "use strict";
     var impel = {

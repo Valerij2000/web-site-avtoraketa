@@ -1,47 +1,3 @@
-/*--------------------- Copyright (c) 2018 -----------------------
-[Master Stylesheet]
-
-Project: Impel Car Dealer Responsive HTML Template
-Version: 1.0.0
-Author: Kamleshyadav
-Assigned to: ThemeForest
--------------------------------------------------------------------
-
-[Table of contents]
-
-1. Body
-2. Typography css / a
-3. Placeholder css
-4. Heading css
-5. Button css
-6. Header css
-7. Search css
-8. Slider css
-9. Welcome Wrapper css
-10.Service css
-11.Featured car css
-12.Help wrapper css
-13.Blog css
-14.Footer css
-15.Home version 1 css
-16.About page css
-17.New purchase page css
-18.Sidebar css
-19.Pagination css
-20.Service page css
-21.Blog page css
-22.Blog single page css
-23.Contact page css
-24.Car sell page css
-25.Purchase page css
-26.Old purchase single page
-27.Compare page css
-28.Checkout page css
-27.Sign in Modal
-28.Error Page css
-29.Go To Top css
--------------------------------------------------------------------*/
-
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
@@ -1482,7 +1438,7 @@ p.slogan strong {
 }
 
 .price_range .irs-slider {
-    background-image: url('../img/ps1.png');
+    background-image: url('../img/range-auto.png');
     width: 35px;
     height: 15px;
     z-index: 999;
@@ -1757,8 +1713,8 @@ p.slogan strong {
 
 @media (max-width: 768px) {
     .impl_video_inner:after {
-        background-image: url('../img/main/rav.jpg');
-        background-size: cover;
+        // background-image: url('../img/main/rav.jpg');
+        // background-size: cover;
     }
 }
 
@@ -2871,7 +2827,8 @@ p.impl_ser_para {
 }
 
 .impl_counter_wrapper {
-    background-image: url(http://via.placeholder.com/1920x300);
+    background-image: url('../img/bg/bg-service.jpg');
+    background-position: 100% 58%;
     background-size: cover;
     position: relative;
     padding: 100px 0px 90px;
@@ -2884,7 +2841,7 @@ p.impl_ser_para {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgb(0 0 0 / 57%);
     content: "";
 }
 
@@ -3256,7 +3213,7 @@ p.impl_ser_para {
 
 .impl_test_data {
     width: 85%;
-    background-color: #862024;
+    background: linear-gradient(rgb(134, 32, 36), rgb(0, 0, 0));
     padding: 70px 30px 30px 170px;
     display: inline-block;
     margin-left: 10%;
@@ -3271,6 +3228,7 @@ p.impl_ser_para {
 }
 
 .impl_test_footer {
+    display: block;
     text-align: right;
     font-size: 20px;
     font-weight: 500;
@@ -4002,7 +3960,8 @@ h2.widget-title {
 }
 
 .impl_provide_wrapper .impl_ser_hover_ovrly {
-    background-color: rgba(241, 91, 91, 0.95);
+    background: linear-gradient(rgb(134, 32, 36), rgb(0, 0, 0));
+    opacity: 0.9;
 }
 
 .impl_provide_wrapper .impl_facility_wrapper:hover .impl_ser_hover_ovrly {
@@ -4016,7 +3975,9 @@ h2.widget-title {
 }
 
 .impl_provide_wrapper .impl_video_inner {
-    background-image: url(http://via.placeholder.com/555x397);
+    background-image: url('../img/bg/bg-service-yb.jpg');
+    background-size: cover;
+    background-position: 100% 48%;
     height: 100%;
     right: 0;
     top: 0;
@@ -4027,7 +3988,7 @@ h2.widget-title {
 }
 
 .impl_provide_wrapper .impl_video_inner.impl_ser_video_img {
-    background-image: url(http://via.placeholder.com/555x397);
+    background-image: url('../img/bg/bg-subaru-yb.jpeg');
 }
 
 .impl_provide_wrapper .impl_play_icon {
@@ -7064,6 +7025,7 @@ label.compare_check_label {
 
     .impl_video_inner {
         background-image: url(../img/main/toyota-main.png);
+        background-position: center;
         height: 300px;
         right: 0;
         top: 100%;
@@ -8023,6 +7985,7 @@ label.compare_check_label {
 
     .impl_welcome_text .panel-title a {
         line-height: 18px;
+        padding-bottom: 26px;
     }
 
     .impl_play_icon {
