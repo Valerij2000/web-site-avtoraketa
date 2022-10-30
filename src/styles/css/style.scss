@@ -3135,7 +3135,7 @@ p.impl_ser_para {
 }
 
 .impl_history_wrapper {
-    background-image: url(http://via.placeholder.com/1920x960/f15b5b);
+    background-image: url('../img/history/bg-history.jpeg');
     background-size: cover;
     padding-top: 50px;
 }
@@ -4463,9 +4463,7 @@ h3.comment-reply-title {
     -o-transform: skewX(-15deg);
     -ms-transform: skewX(-15deg);
     transform: skewX(-15deg);
-    transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .impl_con_data {
@@ -6229,10 +6227,11 @@ label.compare_check_label {
 .error_text .impl_btn:after {
     background-color: #fff;
     border: 1px solid #fff;
+
 }
 
 .error_text .impl_btn {
-    color: #862024;
+    color: #fff;
 }
 
 .btn-whatsapp-pulse {
