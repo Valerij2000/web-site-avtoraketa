@@ -1,7 +1,6 @@
-import {
-  postData
-} from './modules/post';
+import { postData } from './modules/post';
 import './modules/mask';
+import { popupSuccess } from './modules/popup-success';
 
 const TOKEN = '5624677904:AAHYck4wJnxmvzJlVyGkrP3Nb-22iLu8hms';
 const CHAT_ID = '-1001851943548';
@@ -24,6 +23,7 @@ formCollback.forEach(form => {
         this.tel.value = '';
         this.name.value = '';
         this.text.value = '';
+        popupSuccess();
       })
       .catch((err) => {
         console.log(err);
