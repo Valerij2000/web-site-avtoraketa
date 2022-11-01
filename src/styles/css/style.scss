@@ -5893,8 +5893,12 @@ label.compare_check_label {
 	z-index: 1;
 }
 
+.moda__success-title {
+	font-weight: 700 !important;
+}
+
 #success-request .impl_sign_img {
-	background-image: url('../img/main/popup-success.jpeg');
+	background-image: url('../img/contact/form.jpg');
 	background-size: cover;
 	border: 1px solid white;
 	width: 100%;
