@@ -5,30 +5,28 @@
         <div class="impl_heading">
           <h2>Спросите эксперта</h2>
         </div>
-        <div class="impl_query_form">
+        <form action="#" method="POST" class="impl_query_form form-callback">
           <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
               <div class="input-group">
-                <input type="text" class="form-control require" name="name" placeholder="Ваше имя">
+                <input required type="text" class="form-control" name="name" placeholder="Ваше имя">
               </div>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
               <div class="input-group">
-                <input type="text" class="form-control require" name="name" placeholder="Ваш email">
+                <input required type="tel" class="tel form-control" name="tel" placeholder="Ваш телефон">
               </div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div class="input-group">
-                <textarea class="form-control" placeholder="Ваш вопрос"></textarea>
+                <textarea required name="text" class="form-control" placeholder="Ваш вопрос"></textarea>
               </div>
             </div>
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <input type="hidden" name="form_type" value="contact">
-              <a class="impl_btn submitForm">Отправить</a>
-              <div class="response text-center text-capitalize"></div>
+            <div class="col-sm-12">
+              <button type="submit" class="impl_btn">Отправить</button>
             </div>
           </div>
-        </div>
+        </form>
       </div>
       <div class="col-lg-6 col-md-12">
         <div class="impl_query_img">

@@ -12,27 +12,24 @@
           <div class="col-lg-12 col-md-12">
             <h1>Напишите нам</h1>
           </div>
-          <form>
+          <form class="form-callback" action="#" method="POST">
             <div class="col-lg-12 col-md-12">
               <div class="form-group">
-                <input type="text" name="first_name" class="form-control require" placeholder="Ваше имя">
+                <input required type="text" name="name" class="form-control" placeholder="Ваше имя">
               </div>
             </div>
             <div class="col-lg-12 col-md-12">
               <div class="form-group">
-                <input type="text" name="email" class="form-control require" placeholder="Ваш email" data-valid="email"
-                  data-error="Email should be valid.">
+                <input required type="text" name="tel" class="tel form-control" placeholder="Ваш телефон">
               </div>
             </div>
             <div class="col-lg-12 col-md-12">
               <div class="form-group">
-                <textarea name="message" class="form-control" placeholder="Ваше сообщение"></textarea>
+                <textarea required name="text" class="form-control" placeholder="Ваше сообщение"></textarea>
               </div>
             </div>
-            <div class="response"></div>
-            <div class="col-lg-12 col-md-12">
-              <input type="hidden" name="form_type" value="contact">
-              <button type="button" class="impl_btn submitForm">Отправить сообщение</button>
+            <div class="col-sm-12">
+              <button type="submit" class="impl_btn">Отправить сообщение</button>
             </div>
           </form>
         </div>

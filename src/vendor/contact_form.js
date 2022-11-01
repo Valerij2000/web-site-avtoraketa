@@ -41,29 +41,4 @@ $(document).ready(function(){
 		});
 		return check;
 	}
-	$(".submitForm").on("click", function() {
-		var _this = $(this);
-		var targetForm = _this.closest('form');
-		var errroTarget = targetForm.find('.response');
-		var check = checkRequire(targetForm , errroTarget);
-		if(check == 0){
-			var formDetail = new FormData(targetForm[0]);
-			$.ajax({
-				method : 'post',
-				url : 'contactmail.php',
-				data:formDetail,
-				cache:false,
-				contentType: false,
-				processData: false
-			}).done(function(resp){
-				if(resp == 1){
-					targetForm.find('input').val('');
-					targetForm.find('textarea').val('');
-					errroTarget.html('<p style="color:green;">Mail has been sent successfully.</p>');
-				}else{
-					errroTarget.html('<p style="color:red;">Something went wrong please try again later.</p>');
-				}
-			});
-		}
-	});
 });

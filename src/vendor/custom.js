@@ -188,7 +188,6 @@
             }
         },
 
-
         // Scroll		
         Bottom_Scroll: function() {
             $('.impl_scroll').on('click', function() {
