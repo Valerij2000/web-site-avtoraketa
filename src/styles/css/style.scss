@@ -6244,6 +6244,29 @@ label.compare_check_label {
 	color: #fff;
 }
 
+.btn-telegram-pulse {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	right: 20px;
+	bottom: 110px;
+	z-index: 10;
+	cursor: pointer;
+	background: #239dd8;
+	color: white;
+	font-size: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 35px;
+	text-decoration: none;
+	border-radius: 50%;
+	animation-name: pulsetelegram;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+}
+
 .btn-whatsapp-pulse {
 	position: fixed;
 	width: 50px;
@@ -6267,6 +6290,16 @@ label.compare_check_label {
 	animation-iteration-count: infinite;
 }
 
+@keyframes pulsetelegram {
+	0% {
+		box-shadow: 0 0 0 0 rgba(37, 133, 211, 0.5);
+	}
+
+	80% {
+		box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+	}
+}
+
 @keyframes pulse {
 	0% {
 		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
@@ -6287,6 +6320,19 @@ label.compare_check_label {
 	border-radius: 50%;
 	padding: 25px;
 	border: 5px solid #25d366;
+	opacity: 0.75;
+	animation-name: pulse-border;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+}
+
+.btn-telegram-pulse-border::before {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	padding: 25px;
+	border: 5px solid #239dd8;
 	opacity: 0.75;
 	animation-name: pulse-border;
 	animation-duration: 1.5s;
@@ -6319,6 +6365,16 @@ label.compare_check_label {
 	}
 
 	.btn-whatsapp-pulse {
+		font-size: 30px;
+	}
+
+	.btn-telegram-pulse {
+		right: 10px;
+		bottom: 80px;
+		padding: 18px;
+	}
+
+	.btn-telegram-pulse {
 		font-size: 30px;
 	}
 }
