@@ -1368,6 +1368,7 @@ p.slogan strong {
 }
 
 .impl_search_box .nice-select .list {
+	z-index: 1000;
 	width: 100%;
 	border-radius: 0;
 	border: 1px solid #ffff;
@@ -5902,7 +5903,7 @@ label.compare_check_label {
 }
 
 #success-request .impl_sign_img {
-	background-image: url('../img/contact/form.jpg');
+	background-image: url('../img/contact/form.webp');
 	background-size: cover;
 	border: 1px solid white;
 	width: 100%;

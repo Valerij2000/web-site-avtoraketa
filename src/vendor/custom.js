@@ -217,7 +217,7 @@
 				$("#range_24").ionRangeSlider({
 					type: "double",
 					min: 0,
-					max: 50000000,
+					max: 15000000,
 					from: 1200000,
 					to: 10000000,
 					hide_min_max: true,
