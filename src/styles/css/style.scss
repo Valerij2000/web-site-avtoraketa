@@ -1333,7 +1333,7 @@ p.slogan strong {
 }
 
 .impl_select_boxes {
-	width: 83%;
+	width: 80%;
 	display: inline-block;
 	float: left;
 }
@@ -1431,7 +1431,7 @@ p.slogan strong {
 
 .price_range {
 	float: left;
-	width: 47.1%;
+	width: 74.1%;
 	top: -15px;
 	position: relative;
 	backface-visibility: hidden;
@@ -6569,7 +6569,7 @@ label.compare_check_label {
 	}
 
 	.impl_select_boxes {
-		width: 80%;
+		width: 100%;
 	}
 
 	.impl_search_box .price_range {
@@ -8535,6 +8535,30 @@ label.compare_check_label {
 .tooltip-inner {
 	background-color: #fff;
 	color: #000;
+}
+
+.nice-input {
+	border-radius: 0;
+	border: none;
+	color: #5d5d5d;
+	font-weight: 500;
+	clear: none;
+	clear: initial;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+	padding-right: 30px;
+	margin: 0px 15px;
+	margin-bottom: 30px;
+	width: 44%;
+}
+
+@media (max-width: 768.98px) {
+	.nice-input {
+		margin: 0px 0px;
+		margin-bottom: 20px;
+		width: 95%;
+	}
 }
 
 @media (max-width: 600px) {

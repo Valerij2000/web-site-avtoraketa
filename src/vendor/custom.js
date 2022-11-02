@@ -216,10 +216,10 @@
 			if ($('#range_24').length > 0) {
 				$("#range_24").ionRangeSlider({
 					type: "double",
-					min: 1000,
-					max: 2000,
-					from: 1200,
-					to: 1800,
+					min: 0,
+					max: 50000000,
+					from: 1200000,
+					to: 10000000,
 					hide_min_max: true,
 					hide_from_to: false,
 					grid: false
