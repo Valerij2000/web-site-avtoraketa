@@ -1454,6 +1454,12 @@ p.slogan strong {
 	width: calc(100% - 101px);
 }
 
+@media (max-width: 479.98px) {
+	.price_range .irs.js-irs-0 {
+		width: 100%;
+	}
+}
+
 .price_range .irs-line-mid {
 	border: 1px solid #ffffff;
 	left: 0;
@@ -7221,7 +7227,7 @@ label.compare_check_label {
 
 	.impl_search_box .nice-select {
 		margin: 0px 10px 30px;
-		width: 27%;
+		width: 90%;
 		display: inline-block;
 		float: none;
 	}
