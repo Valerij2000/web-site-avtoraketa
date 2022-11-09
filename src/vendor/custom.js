@@ -72,6 +72,7 @@
 					$(this).parent('.impl_menu ul li').children('ul.sub-menu').slideToggle();
 				}
 			});
+
 			function CheckMobileHandler() {
 				if ($('.impl_menu_wrapper').hasClass('open_menu')) {
 					$("#menu-bars").addClass('fa-close');
@@ -217,12 +218,13 @@
 				$("#range_24").ionRangeSlider({
 					type: "double",
 					min: 0,
-					max: 15000000,
-					from: 1200000,
-					to: 10000000,
+					max: 20000000,
+					from: 500000,
+					to: 15000000,
 					hide_min_max: true,
 					hide_from_to: false,
-					grid: false
+					grid: false,
+					step: 200000
 				});
 			}
 		},
