@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
-Disallow: error.html
+Disallow: 404.html
 Sitemap: https://avtoraketa.com/sitemap.xml

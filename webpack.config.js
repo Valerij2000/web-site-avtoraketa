@@ -58,6 +58,10 @@ module.exports = {
           from: path.resolve(__dirname, 'src', 'sitemap.xml'),
           to: path.resolve(__dirname, 'dist'),
         },
+        {
+          from: path.resolve(__dirname, 'src', '.htaccess'),
+          to: path.resolve(__dirname, 'dist'),
+        },
       ],
     }),
   ],

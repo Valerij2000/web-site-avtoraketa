@@ -6172,7 +6172,8 @@ label.compare_check_label {
 /*----Error Page Css Start----*/
 
 .impl_error_wrapper {
-	background-image: url(http://via.placeholder.com/1920x640/f15b5b);
+	background: linear-gradient(rgb(4 8 5), rgb(0, 0, 0));
+	background-position: 0% 83%;
 	background-size: cover;
 	padding: 150px 0px;
 }
