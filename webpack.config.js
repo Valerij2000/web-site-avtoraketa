@@ -44,12 +44,21 @@ module.exports = {
     new ImageminWebpWebpackPlugin(),
     new CopyPlugin({
       patterns: [{
-        from: path.resolve(__dirname, 'src', 'googlefc1494847b7d68fd.html'),
-        to: path.resolve(__dirname, 'dist'),
-      }, {
-        from: path.resolve(__dirname, 'src', 'vendor'),
-        to: path.resolve(__dirname, 'dist', 'vendor'),
-      }, ],
+          from: path.resolve(__dirname, 'src', 'vendor'),
+          to: path.resolve(__dirname, 'dist', 'vendor'),
+        }, {
+          from: path.resolve(__dirname, 'src', 'googlefc1494847b7d68fd.html'),
+          to: path.resolve(__dirname, 'dist'),
+        },
+        {
+          from: path.resolve(__dirname, 'src', 'robots.txt'),
+          to: path.resolve(__dirname, 'dist'),
+        },
+        {
+          from: path.resolve(__dirname, 'src', 'sitemap.xml'),
+          to: path.resolve(__dirname, 'dist'),
+        },
+      ],
     }),
   ],
   module: {

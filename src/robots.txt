@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Disallow: error.html
+Sitemap: https://avtoraketa.com/sitemap.xml
