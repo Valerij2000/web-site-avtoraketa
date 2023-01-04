@@ -570,7 +570,7 @@ ul.impl_header_icons li a {
 }
 
 ul.impl_header_icons li>a:hover {
-	color: #862024;
+	opacity: 0.9;
 }
 
 .impl_menu_wrapper {
@@ -1320,7 +1320,8 @@ p.slogan strong {
 	display: none;
 }
 
-.menu_cross {
+.menu_cross,
+.feedback-item {
 	display: none;
 }
 
@@ -1383,7 +1384,9 @@ p.slogan strong {
 }
 
 @media (max-width: 991.98px) {
-	.impl_search_btn .link {
+
+	.impl_search_btn .link,
+	.feedback-item {
 		display: block;
 	}
 }

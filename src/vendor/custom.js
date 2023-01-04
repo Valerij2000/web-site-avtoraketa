@@ -1,6 +1,6 @@
 (function ($) {
 	"use strict";
-	var impel = {
+	var mainData = {
 		initialised: false,
 		version: 1.0,
 		mobile: false,
@@ -10,7 +10,7 @@
 			} else {
 				return;
 			}
-			/*-------------- Impel Functions Calling ---------------------------------------------------
+			/*-------------- mainData Functions Calling ---------------------------------------------------
 			------------------------------------------------------------------------------------------------*/
 			this.RTL();
 			this.Search();
@@ -29,8 +29,27 @@
 			this.Nice_select();
 			// this.steps();
 			this.form_js();
+			this.commentsInit();
 		},
-		/*-------------- Impel Functions definition ---------------------------------------------------
+		// Comments Logic Path
+		commentsInit: function() {
+			let linkComments = document.querySelectorAll('[data-comments]');
+			let location = window.location.href;
+			let directoryPath = location.substring(0, location.lastIndexOf("/")+1);
+			// Build version path
+			if (directoryPath !== 'https://avtoraketa.com') {
+				linkComments.forEach(link => {
+					link.href = 'https://avtoraketa.com#section-comments';
+				})
+			}
+			// Dev vesrion path
+			// if (directoryPath !== 'http://localhost:5555') {
+			// 	linkComments.forEach(link => {
+			// 		link.href = 'http://localhost:5555#section-comments';
+			// 	})
+			// }
+		},
+		/*-------------- mainData Functions definition ---------------------------------------------------
 		---------------------------------------------------------------------------------------------------*/
 		RTL: function () {
 			var rtl_attr = $("html").attr('dir');
@@ -471,7 +490,7 @@
 			$(this).width(each_bar_width + '%');
 		});
 
-		impel.init();
+		mainData.init();
 	});
 	// Preloader Js
 	jQuery(window).on('load', function () {
