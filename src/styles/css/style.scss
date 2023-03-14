@@ -227,7 +227,7 @@ button:focus {
 	position: fixed;
 	right: 0;
 	top: 0;
-	z-index: 2147483647;
+	z-index: 10000;
 }
 
 #status {
@@ -1426,7 +1426,7 @@ p.slogan strong {
 
 .impl_search_btn .impl_btn:after {
 	background-color: #151515;
-	border: 1px solid #151515;
+	border: 1px solid white;
 }
 
 .impl_search_btn .impl_btn:hover:after {
@@ -6251,7 +6251,7 @@ label.compare_check_label {
 	position: fixed;
 	width: 50px;
 	height: 50px;
-	right: 20px;
+	left: 20px;
 	bottom: 110px;
 	z-index: 10;
 	cursor: pointer;
@@ -6274,7 +6274,7 @@ label.compare_check_label {
 	position: fixed;
 	width: 50px;
 	height: 50px;
-	right: 20px;
+	left: 20px;
 	bottom: 20px;
 	z-index: 10;
 	cursor: pointer;
