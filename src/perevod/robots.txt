@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://avtoraketa-perevod.site/sitemap.xml
