@@ -8582,9 +8582,8 @@ label.compare_check_label {
 }
 
 .img-logo {
-	// max-width: 280px;
-	width: 30vmin;
-	// width: 100%;
+	max-width: 300px;
+	width: 100%;
 	height: auto;
 	object-fit: cover;
 	background: white;
@@ -8592,15 +8591,15 @@ label.compare_check_label {
 	padding: 10px;
 
 	@media (max-width: 1500px) {
-		width: 25vmin;
+		max-width: 250px;
 	}
 
 	@media (max-width: 1340px) {
-		width: 20vmin;
+		max-width: 220px;
 	}
 
-	@media (max-width: 600px) {
-		width: 200px;
+	@media (max-width: 1300px) {
+		max-width: 200px;
 	}
 }
 
