@@ -1317,7 +1317,7 @@ p.slogan strong {
 }
 
 .dropdown-expander {
-	display: none;
+	// display: none;
 }
 
 .menu_cross,
@@ -8582,13 +8582,26 @@ label.compare_check_label {
 }
 
 .img-logo {
-	max-width: 280px;
-	width: 100%;
+	// max-width: 280px;
+	width: 30vmin;
+	// width: 100%;
 	height: auto;
 	object-fit: cover;
 	background: white;
 	border-radius: 3px;
 	padding: 10px;
+
+	@media (max-width: 1500px) {
+		width: 25vmin;
+	}
+
+	@media (max-width: 1340px) {
+		width: 20vmin;
+	}
+
+	@media (max-width: 600px) {
+		width: 200px;
+	}
 }
 
 .tooltip-inner {
@@ -8713,17 +8726,18 @@ label.compare_check_label {
 	padding-bottom: 0px;
 }
 
+.dropdown-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
+}
+
 @media (max-width: 768.98px) {
 	.nice-input {
 		margin: 0px 0px;
 		margin-bottom: 20px;
 		width: 95%;
-	}
-}
-
-@media (max-width: 600px) {
-	.img-logo {
-		max-width: 200px;
 	}
 }
 
