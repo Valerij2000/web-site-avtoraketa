@@ -11,6 +11,11 @@ import {
   dataRequestForm
 } from './modules/data-request';
 import './modules/mask';
+import {
+  popupKorea
+} from './modules/popup-korea';
+
+popupKorea();
 
 const formCollback = document.querySelectorAll('.form-callback');
 formCollback.forEach(form => {
