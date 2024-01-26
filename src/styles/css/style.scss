@@ -2122,6 +2122,15 @@ p.slogan strong {
 	overflow: hidden;
 }
 
+.impl_flex_container {
+	display: flex;
+	justify-content: center;
+
+	@media (max-width: 576px) {
+		flex-direction: column-reverse;
+	}
+}
+
 .impl_post_img:after {
 	position: absolute;
 	height: 100%;
