@@ -1,0 +1,148 @@
+<form id="form-credit" class="form-credit" action="#" method="POST">
+  <div class="impl_steps_wrapper wizard clearfix" role="application" id="steps-uid-0">
+    <div class="content clearfix">
+      <section id="steps-uid-0-p-0" role="tabpanel" aria-labelledby="steps-uid-0-h-0" class="body current"
+        aria-hidden="false" style="display: block;">
+        <div class="impl_step">
+          <div class="row">
+            {{!-- 1 --}}
+            <div class="col-lg-6 col-md-6">
+              <div class="form-group">
+                <input required id="credit_name" name="credit_name" type="text" class="form-control"
+                  placeholder="Фамилия Имя Отчество*">
+              </div>
+            </div>
+            {{!-- 2 --}}
+            <div class="col-lg-6 col-md-6">
+              <div class="form-group">
+                <input required id="credit_tel" type="tel" name="credit_tel" class="form-control tel"
+                  placeholder="Мобильный телефон*">
+              </div>
+            </div>
+            {{!-- 3 --}}
+            <div class="col-lg-6 col-md-6">
+              <div class="form-group">
+                <input required id="credit_education" name="credit_education" type="text" class="form-control"
+                  placeholder="Образование*">
+              </div>
+            </div>
+            {{!-- 4 --}}
+            <div class="col-lg-6 col-md-6">
+              <div class="form-group">
+                <input required id="credit_status" name="credit_status" type="text" class="form-control"
+                  placeholder="Семейное положение*">
+              </div>
+            </div>
+            {{!-- 5 --}}
+            <div class="col-lg-6 col-md-6">
+              <div class="form-group">
+                <input required id="credit_city" type="city" name="credit_city" class="form-control"
+                  placeholder="Город проживания*">
+              </div>
+            </div>
+            {{!-- 6 --}}
+            <div class="col-lg-6 col-md-6">
+              <div class="form-group">
+                <input required id="credit_living" name="credit_living" type="text" class="form-control"
+                  placeholder="Фактическое место жительства совпадает с местом регистрации*">
+              </div>
+            </div>
+            {{!-- 7 --}}
+            <div class="col-lg-6 col-md-6">
+              <div class="form-group">
+                <input required id="credit_working_place" type="text" name="credit_working_place" class="form-control"
+                  placeholder="Место работы (название) если военный номер части*">
+              </div>
+            </div>
+            {{!-- 8 --}}
+            <div class="col-lg-6 col-md-6">
+              <div class="form-group">
+                <input required id="credit_working_address" type="text" name="credit_working_address"
+                  class="form-control" placeholder="Адрес места работы (для военных только город прохождения службы)*">
+              </div>
+            </div>
+            {{!-- 9 --}}
+            <div class="col-lg-6 col-md-6">
+              <div class="form-group">
+                <input required id="credit_occupation" type="text" name="credit_occupation" class="form-control"
+                  placeholder="Должность (звание)*">
+              </div>
+            </div>
+            {{!-- 10 --}}
+            <div class="col-lg-6 col-md-6">
+              <div class="form-group">
+                <input required id="credit_working_experience" type="number" name="credit_working_experience"
+                  class="form-control" placeholder="Стаж*">
+              </div>
+            </div>
+            {{!-- 11 --}}
+            <div class="col-lg-12 col-md-12">
+              <div class="form-group">
+                <input required id="credit_income" type="number" name="credit_income" class="form-control"
+                  placeholder="Доход, сумма (справки о доходах не нужны) вот Вы сколько зарабатываете, столько и пишите, даже если есть побочный заработок, тоже плюсуйте, максимальный заработок в месяц который был*">
+              </div>
+            </div>
+            {{!-- 12 --}}
+            <div class="col-lg-12 col-md-12">
+              <div class="form-group">
+                <input required id="credit_additional_income" type="number" name="credit_additional_income"
+                  class="form-control" placeholder="Дополнительный доход (муж, жена, мама, папа, парень, девушка)*">
+              </div>
+            </div>
+            {{!-- 13 --}}
+            <div class="col-lg-12 col-md-12">
+              <div class="form-group">
+                <input required id="credit_additional_person" type="name" name="credit_additional_person"
+                  class="form-control"
+                  placeholder="Персона для ЭС если с Вами не смогут связаться, будут звонить этому человеку ФИО полностью*">
+              </div>
+            </div>
+            {{!-- 14 --}}
+            <div class="col-lg-12 col-md-12">
+              <div class="form-group">
+                <input required id="credit_additional_number" type="tel" name="credit_additional_number"
+                  class="form-control tel"
+                  placeholder="Рабочий номер телефона или номер руководителя (командира, сослуживца), банк может прозвонить и спросить действительно вы там работаете (служите)*">
+              </div>
+            </div>
+            {{!-- 15 --}}
+            <div class="col-lg-6 col-md-6">
+              <div class="form-group">
+                <input required id="credit_car_model" type="text" name="credit_car_model" class="form-control"
+                  placeholder="Марка модель машины и год выпуска*">
+              </div>
+            </div>
+            {{!-- 16 --}}
+            <div class="col-lg-6 col-md-6">
+              <div class="form-group">
+                <input required id="credit_car_cost" type="number" name="credit_car_cost" class="form-control"
+                  placeholder="Стоимость авто*">
+              </div>
+            </div>
+            {{!-- 17 --}}
+            <div class="col-lg-12 col-md-12">
+              <div class="form-group">
+                <input required id="credit_first_summ" type="number" name="credit_first_summ" class="form-control"
+                  placeholder="Сумма первого взноса за авто*">
+              </div>
+            </div>
+            {{!-- 18 --}}
+            <div class="col-lg-12 col-md-12">
+              <div class="form-group">
+                <label class="form-group-label" for="credit_passport">Фото паспорта (лицевая сторона) и просписки (место
+                  жительства)*</label>
+                <input required type="file" id="credit_passport" name="credit_passport" multiple class="form-control">
+              </div>
+            </div>
+            {{!-- send button --}}
+            <div class="col-lg-12 col-md-12">
+              <div class="form-group">
+                <button class="btn center" type="submit">Отправить заявление</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</form>

@@ -91,6 +91,15 @@ button:focus {
 	transition: all 0.3s;
 }
 
+.btn {
+	cursor: pointer;
+}
+
+.btn.center {
+	display: block;
+	margin: 0 auto;
+}
+
 .form-control:focus {
 	outline: none;
 	box-shadow: none;
@@ -4423,6 +4432,10 @@ h3.comment-reply-title {
 
 .impl_con_form .form-group {
 	margin-bottom: 30px;
+}
+
+.form-group-label {
+	float: left;
 }
 
 .impl_con_form .form-control:focus,
