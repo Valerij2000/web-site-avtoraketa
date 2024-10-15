@@ -15,11 +15,7 @@ import {
   TOKEN
 } from './modules/data-creditform';
 import './modules/mask';
-import {
-  popupKorea
-} from './modules/popup-korea';
-
-popupKorea();
+import './modules/initial-popups';
 
 if (document.querySelector('.form-callback')) {
   const formCollback = document.querySelectorAll('.form-callback');
