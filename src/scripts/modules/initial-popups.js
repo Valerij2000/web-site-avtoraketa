@@ -16,6 +16,6 @@ const popupCredit = () => {
   }, sec2*1000);
 }
 
-popupCredit();
+// popupCredit();
 
-popupKorea();
+// popupKorea();
