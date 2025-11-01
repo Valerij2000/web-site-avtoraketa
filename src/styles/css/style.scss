@@ -8785,6 +8785,11 @@ label.compare_check_label {
 @media (max-width: 768px) {
 	.impl_timeline {
 		display: grid !important;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.impl_timeline_wrapper ul li .impl_tl_item h2 {
+		font-size: 16px;
+		line-height: 1.2;
 	}
 }
