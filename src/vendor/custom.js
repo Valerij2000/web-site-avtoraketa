@@ -493,12 +493,14 @@
 		mainData.init();
 	});
 	// Preloader Js
-	jQuery(window).on('load', function () {
-		jQuery("#status").fadeOut();
-		jQuery("#preloader").delay(200).fadeOut("slow");
-
-
-	});
+	setTimeout(function () {
+    $("#status").fadeOut();
+    $("#preloader").fadeOut("slow");
+  }, 2500);
+	// jQuery(window).on('load', function () {
+	// 	jQuery("#status").fadeOut();
+	// 	jQuery("#preloader").delay(200).fadeOut("slow");
+	// });
 })(jQuery);
 if ($('.impl_change_text').length > 0) {
 	var $slogans = $("p.slogan").find("strong");
