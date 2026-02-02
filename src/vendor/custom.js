@@ -496,7 +496,7 @@
 	setTimeout(function () {
     $("#status").fadeOut();
     $("#preloader").fadeOut("slow");
-  }, 2500);
+  }, 1500);
 	// jQuery(window).on('load', function () {
 	// 	jQuery("#status").fadeOut();
 	// 	jQuery("#preloader").delay(200).fadeOut("slow");
