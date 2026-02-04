@@ -1,236 +1,107 @@
 <section class="section-comments" id="section-comments">
-  <h2 class="visually-hidden">Секция с комментариями</h2>
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12 col-md-12">
-        <div id="anycomment-app" class="comments">
+    <h2 class="section-title mb-3">Отзывы клиентов</h2>
 
-          <form id="comment-form" class="comment-form">
-            <input type="text" id="comment-author" placeholder="Ваше имя" required />
-            <textarea id="comment-text" placeholder="Напишите комментарий..." required></textarea>
-            <button type="submit">Отправить</button>
-          </form>
-
-          <ul id="comments-list" class="comments-list"></ul>
-
-        </div>
+    <div class="tg-comments-grid">
+      <div class="tg-comment">
+        <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="AvtoraketaKZ/23406"
+          data-width="100%"></script>
       </div>
+
+      <div class="tg-comment">
+        <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="AvtoraketaKZ/23373"
+          data-width="100%"></script>
+      </div>
+
+      <div class="tg-comment">
+        <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="AvtoraketaKZ/23372"
+          data-width="100%"></script>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="https://t.me/AvtoraketaKZ/23338" class="tg-btn" target="_blank" rel="noopener">
+        <span class="tg-btn__icon">✈️</span>
+        <span class="tg-btn__text">Смотреть все отзывы в Telegram</span>
+      </a>
     </div>
   </div>
 </section>
 
+
 <style>
-  .comment-form textarea {
-    resize: none;
+  .tg-comments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
   }
 
-  .comment-form input,
-  .comment-form textarea {
-    border: 1px solid white;
-    background: none;
-    color: white;
-    padding: 10px;
-    font-size: 14px;
+  .tg-comment {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
+    background: #fff;
   }
 
-  .comment-item {
-    padding: 12px;
-    border: 1px solid #ddd;
-    margin-bottom: 12px;
-    position: relative;
-    background: #fafafa;
-  }
+  .tg-btn {
+    --tg-color: #229ED9;
 
-  .comment-header {
-    display: flex;
-    justify-content: space-between;
-    font-size: 12px;
-    color: #666;
-    margin-bottom: 6px;
-  }
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
 
-  .comment-author {
-    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 999px;
+
+    background: linear-gradient(135deg,
+        var(--tg-color),
+        #1c8ec9);
+
     color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+
+    box-shadow:
+      0 10px 24px rgba(34, 158, 217, 0.35),
+      inset 0 1px 0 rgba(255, 255, 255, .2);
+
+    transition:
+      transform .25s ease,
+      box-shadow .25s ease,
+      background .25s ease;
   }
 
-  .comment-delete {
-    position: absolute;
-    bottom: 8px;
-    right: 8px;
-    background: transparent;
-    border: none;
-    color: red;
-    cursor: pointer;
+  .tg-btn__icon {
+    font-size: 18px;
+    transition: transform .25s ease;
   }
 
-  .comment-item p {
-    margin: 0;
-    line-height: 1.4;
+  .tg-btn:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      0 16px 32px rgba(34, 158, 217, 0.45),
+      inset 0 1px 0 rgba(255, 255, 255, .25);
   }
 
-  .section-comments {
-    padding: 40px 0;
+  .tg-btn:hover .tg-btn__icon {
+    transform: translateX(4px);
   }
 
-  .comment-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
+  .tg-btn:active {
+    transform: translateY(0);
+    box-shadow:
+      0 8px 16px rgba(34, 158, 217, 0.3),
+      inset 0 2px 6px rgba(0, 0, 0, .15);
   }
 
-  .comment-form textarea {
-    resize: vertical;
-    min-height: 80px;
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  .comment-form button {
-    align-self: flex-start;
-    padding: 8px 16px;
-    cursor: pointer;
-  }
-
-  .comments-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .comment-item {
-    background-color: black;
-    padding: 10px;
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-    position: relative;
-  }
-
-  .comment-item button {
-    position: absolute;
-    bottom: 8px;
-    right: 8px;
-    background: transparent;
-    border: none;
-    color: red;
-    cursor: pointer;
+  /* адаптив */
+  @media (max-width: 480px) {
+    .tg-btn {
+      width: 100%;
+      justify-content: center;
+      padding: 14px 20px;
+      font-size: 15px;
+    }
   }
 </style>
-
-<script>
-  const form = document.getElementById('comment-form');
-  const authorInput = document.getElementById('comment-author');
-  const textInput = document.getElementById('comment-text');
-  const list = document.getElementById('comments-list');
-
-  const STORAGE_KEY = 'comments';
-
-  const defaultComments = [
-    {
-      author: 'Алексей',
-      text: '🔥 Очень крутой проект, выглядит стильно!',
-      date: '28.01.2026 11:42',
-      isSystem: true,
-    },
-    {
-      author: 'Мария',
-      text: '👏 Отличная реализация, особенно понравилась секция комментариев.',
-      date: '29.01.2026 09:18',
-      isSystem: true,
-    },
-    {
-      author: 'Иван',
-      text: '💡 Было бы интересно добавить ответы на комментарии.',
-      date: '30.01.2026 16:05',
-      isSystem: true,
-    },
-  ];
-
-  function getComments() {
-    return JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
-  }
-
-  function saveComments(comments) {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(comments));
-  }
-
-  function initComments() {
-    if (!localStorage.getItem(STORAGE_KEY)) {
-      saveComments(defaultComments);
-    }
-  }
-
-  function formatDate(date = new Date()) {
-    return date.toLocaleString('ru-RU', {
-      day: '2-digit',
-      month: '2-digit',
-      year: 'numeric',
-      hour: '2-digit',
-      minute: '2-digit',
-    });
-  }
-
-  function renderComments() {
-    const comments = getComments();
-    list.innerHTML = '';
-
-    comments.forEach((comment, index) => {
-      const li = document.createElement('li');
-      li.className = 'comment-item';
-
-      li.innerHTML = `
-        <div class="comment-header">
-          <span class="comment-author">${comment.author}</span>
-          <span class="comment-date">${comment.date}</span>
-        </div>
-        <p>${comment.text}</p>
-        ${comment.isSystem
-          ? ''
-          : `<button class="comment-delete" data-index="${index}">Удалить</button>`
-        }
-      `;
-
-      list.appendChild(li);
-    });
-  }
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const author = authorInput.value.trim();
-    const text = textInput.value.trim();
-
-    if (!author || !text) return;
-
-    const comments = getComments();
-
-    comments.push({
-      author,
-      text,
-      date: formatDate(),
-      isSystem: false,
-    });
-
-    saveComments(comments);
-
-    authorInput.value = '';
-    textInput.value = '';
-
-    renderComments();
-  });
-
-  list.addEventListener('click', (e) => {
-    if (e.target.classList.contains('comment-delete')) {
-      const index = e.target.dataset.index;
-      const comments = getComments();
-
-      comments.splice(index, 1);
-      saveComments(comments);
-      renderComments();
-    }
-  });
-
-  initComments();
-  renderComments();
-</script>
