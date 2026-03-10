@@ -2571,8 +2571,20 @@ h1.impl_foo_title {
 
 p.impl_copyright {
 	margin: 0px;
-	font-size: 16px;
+	font-size: 12px;
 	font-weight: 500;
+}
+
+div.text-slider-hero {
+	line-height: 75px !important;
+
+	@media (max-width: 768px) {
+		line-height: 36px !important;
+	}
+
+	@media (max-width: 576px) {
+		line-height: 26px !important;
+	}
 }
 
 /*----Home Version 1 Css Start----*/
